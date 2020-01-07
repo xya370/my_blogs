@@ -1,0 +1,24 @@
+{
+  "name": "vuePress",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "xya370",
+    "email": "1651966627@qq.com"
+  },
+  "repository": "/vuePress",
+  "scripts": {
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog",
+    "deploy": "bash deploy.sh"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/theme-blog": "^1.4.0",
+    "vuepress": "^1.0.0"
+  },
+  "dependencies": {
+    "@vuepress/theme-default": "^1.0.0-rc.1"
+  }
+}
