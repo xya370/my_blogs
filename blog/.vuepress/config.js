@@ -1,8 +1,10 @@
+// var authPng = @require './images/my.png'
+// import authPng from  "./images/my.png"
 module.exports = {
   title: 'xya的踩坑之路',
   base: "/my_blogs/",
   description: '一个简单的小博客，记录下掉过的坑',
-  theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
+  theme: "./theme", // OR shortcut: @vuepress/blog
   themeConfig: {
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/#modifyblogpluginoptions
@@ -13,6 +15,7 @@ module.exports = {
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/#nav
      */
+    // authPng: require './images/my.png',
     nav: [
       {
         text: '主页',
@@ -47,6 +50,6 @@ module.exports = {
           link: '',
         },
       ],
-    },
+    }
   },
 }

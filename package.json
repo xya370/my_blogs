@@ -19,6 +19,7 @@
     "vuepress": "^1.0.0"
   },
   "dependencies": {
-    "@vuepress/theme-default": "^1.0.0-rc.1"
+    "@vuepress/theme-default": "^1.0.0-rc.1",
+    "require": "^2.4.20"
   }
 }

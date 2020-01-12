@@ -3,6 +3,7 @@
   tag:
     - vuePress
   auth: xya370
+  classification: daliy
 ---
 
 # 利用vuePress搭建一个自己的在线博客（一）
@@ -86,7 +87,7 @@
   3. 然后可以配置package.json:
 
       script: {
-        "deploy": "bash deloy.sh"
+        "deploy": "bash deploy.sh"
       }
   4. npm run deploy 等待执行完成，就部署成功了
 
