@@ -3,16 +3,15 @@
     <div class="blog-theme_main">
          <!-- <Header />
          <Classfication/>
-                 <div class="content-wrapper" @click="isMobileHeaderOpen = false">
-          <DefaultGlobalLayout />
-                 </div>
-             </div>
-             <Header />
-             <MobileHeader
-               :is-open="isMobileHeaderOpen"
-               @toggle-sidebar="isMobileHeaderOpen = !isMobileHeaderOpen"
-             /> -->
-      <MyLayout />
+               <div class="content-wrapper" @click="isMobileHeaderOpen = false">
+                 <DefaultGlobalLayout />
+               </div>
+                <MobileHeader
+         :is-open="isMobileHeaderOpen"
+         @toggle-sidebar="isMobileHeaderOpen = !isMobileHeaderOpen"
+                /> -->
+        <MyLayout/>
+        <!-- <MobileLayout v-show="isMobile()"/> -->
     </div>
     <Footer />
   </div>
@@ -25,7 +24,7 @@ import MobileHeader from '@theme/components/MobileHeader.vue'
 import Footer from '@theme/components/Footer.vue'
 import MyLayout from "./MyLayout.vue"
 // import Classfication from '../components/Classfiction.vue'
-
+import MobileLayout from "./MobileLayout";
 export default {
   components: {
     DefaultGlobalLayout: GlobalLayout,
@@ -34,6 +33,7 @@ export default {
     Footer,
     MyLayout,
     // Classfication,
+    MobileLayout
   },
 
   data() {
@@ -43,10 +43,16 @@ export default {
   },
 
   mounted() {
+    console.log(this.isMobile())
     this.$router.afterEach(() => {
       this.isMobileHeaderOpen = false
     })
   },
+  methods: {
+    isMobile(){
+      // return /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)
+    }
+  }
 }
 </script>
 

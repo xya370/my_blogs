@@ -3,7 +3,7 @@
   tag:
     - vuePress
   auth: xya370
-  classification: daliy
+  classification: 挖坑中
 ---
 
 # 利用vuePress搭建一个自己的在线博客（一）

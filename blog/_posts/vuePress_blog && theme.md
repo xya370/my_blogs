@@ -4,7 +4,7 @@
         - vuePress
         - vuePress-theme
     auth: xya370
-    classification: daliy
+    classification: 挖坑中
 ---
 
 # 利用vuePress搭建一个自己的在线博客（二）之主题修改和自定义

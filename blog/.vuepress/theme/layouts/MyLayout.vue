@@ -12,7 +12,7 @@
         <span class="info-description">{{ $site.description || '暂时还不想写哦'}}</span>
 
         <div class = "Layout_main-blogsTag">
-          <div class="blogs-classfiction">标签分类</div>
+          <div class="blogs-classfiction">文章分类</div>
           <ul>
             <li v-for = "(item, index) of tags" class="li-tags">
               <NavLink :link="item.path" class="tag-link">{{ item.name }} </NavLink>
@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="Layout_main-blogs">
-        <div class="content-wrapper" @click="isMobileHeaderOpen = false">
+        <div class="content-wrapper">
           <DefaultGlobalLayout />
         </div>
       </div>
@@ -54,9 +54,13 @@
     },
     data(){
       return {
-        tags: this.$root.$tag.list || []
+        tags: this.$root.$classification.list || []
       }
     },
+    beforeRouteLeave(to, from, next){
+      console.log(to, from, next)
+      next()
+    }
   }
 </script>
 
