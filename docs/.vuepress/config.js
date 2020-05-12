@@ -7,7 +7,7 @@ module.exports = {
       "link",
       {
         "rel": "icon",
-        "href": "/favicon.ico"
+        "href": "./favicon.ico"
       }
     ],
     [
@@ -74,7 +74,7 @@ module.exports = {
     "sidebar": "auto",
     "lastUpdated": "Last Updated",
     "author": "xya370",
-    "authorAvatar": "/avatar.png",
+    "authorAvatar": "./avatar.png",
     "record": "xxxx",
     "startYear": "2017"
   },
