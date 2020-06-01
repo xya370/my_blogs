@@ -1,6 +1,7 @@
 module.exports = {
   "title": "blog",
   "description": "一些踩坑的小日常",
+  "base":"/my_blogs/",
   "dest": "public",
   "head": [
     [
@@ -56,10 +57,9 @@ module.exports = {
     },
     "friendLink": [
       {
-        "title": "午后南杂",
-        "desc": "Enjoy when you can, and endure when you must.",
-        "email": "1156743527@qq.com",
-        "link": "https://www.recoluan.com"
+        "title": "xya_cnblogs",
+        "email": "1651966627@qq.com",
+        "link": "https://www.cnblogs.com/xya-b/"
       },
       {
         "title": "vuepress-theme-reco",
@@ -72,9 +72,10 @@ module.exports = {
     "search": true,
     "searchMaxSuggestions": 10,
     "sidebar": "auto",
+    "sidebarDepth":2,
     "lastUpdated": "Last Updated",
     "author": "xya370",
-    "authorAvatar": "./avatar.png",
+    "authorAvatar": "avatar.png",
     "record": "xxxx",
     "startYear": "2017"
   },

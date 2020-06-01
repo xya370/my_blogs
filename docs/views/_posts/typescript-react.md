@@ -58,9 +58,9 @@
 
             关于tsconfig.js文件的具体配置内容可以查看[官方文档](https://www.tslang.cn/docs/handbook/tsconfig-json.html)
 
-### 项目进行中：
+## 项目进行中：
 
-#### 项目中使用@修饰符进行模块文件查询
+### 项目中使用@修饰符进行模块文件查询
 
     1. npm run enject 展开config等文件
     2. ./config/webpack.config.js 文件中添加内容：
@@ -80,7 +80,7 @@
         }
     4. 重启项目，进行文件的引入。
 
-#### 项目中引入swipper
+### 项目中引入swipper
 
     1. npm install @types/swipper
     2. 文件中使用swipper,并引入css
@@ -120,7 +120,7 @@ typescript环境下：
         }
     }
 
-#### typescript-react && axios && http代理
+### typescript-react && axios && http代理
  在项目中使用axios和其他项目一样，都是直接 npm install axios,然后在需要的文件中import引入进行使用，但是一般我们在项目中使用的都是进行过封装的axios方法，
  在这里，同样先对axios方法进行封装：
 
@@ -211,7 +211,7 @@ typescript环境下：
     export {_getInfo};
 ```
 
-##### 项目中的反向代理proxy
+### 项目中的反向代理proxy
 在前后端分离时，不想设置axios的baseUrl来进行请求，我们使用proxy来进行代理
 
 方法一：
@@ -255,3 +255,16 @@ typescript环境下：
         }
 ```
 最后记得重启下服务哟
+
+### typescript && react 中的window扩展添加全局变量
+有时需要设置全局变量，但是在引用了typescript后由于限制严格，不能随意在window中添加对象，直接使用global.x会提示报错，
+方法: 在使用tyescript时会生成一个全局的声明文件.d.ts, 可以在里面添加声明，如global.loadShow,
+
+``` typescript
+   declare namespace NodeJS {
+      interface Global {
+          loadShow:Boolean
+      }
+    }
+```
+这样我们就可以在需要的文件中直接global.loadShow使用了
