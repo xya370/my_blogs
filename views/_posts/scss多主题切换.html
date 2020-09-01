@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>利用scss进行主题切换 | blog</title>
+    <meta name="generator" content="VuePress 1.4.1">
+    <link rel="icon" href="./favicon.ico">
+    <meta name="description" content="一些踩坑的小日常">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/my_blogs/assets/css/0.styles.29b1df99.css" as="style"><link rel="preload" href="/my_blogs/assets/js/app.abffb475.js" as="script"><link rel="preload" href="/my_blogs/assets/js/3.512a1791.js" as="script"><link rel="preload" href="/my_blogs/assets/js/1.2587663a.js" as="script"><link rel="preload" href="/my_blogs/assets/js/16.82fa4a51.js" as="script"><link rel="prefetch" href="/my_blogs/assets/js/10.65a6fae4.js"><link rel="prefetch" href="/my_blogs/assets/js/11.a6cc3e52.js"><link rel="prefetch" href="/my_blogs/assets/js/12.b93c2d0b.js"><link rel="prefetch" href="/my_blogs/assets/js/13.2f10a168.js"><link rel="prefetch" href="/my_blogs/assets/js/14.e11f2f97.js"><link rel="prefetch" href="/my_blogs/assets/js/15.3f0f3c96.js"><link rel="prefetch" href="/my_blogs/assets/js/17.ca7c6e6f.js"><link rel="prefetch" href="/my_blogs/assets/js/18.82d4da3e.js"><link rel="prefetch" href="/my_blogs/assets/js/19.941e3fc1.js"><link rel="prefetch" href="/my_blogs/assets/js/20.63a41336.js"><link rel="prefetch" href="/my_blogs/assets/js/21.5a3238af.js"><link rel="prefetch" href="/my_blogs/assets/js/22.2e9e28d2.js"><link rel="prefetch" href="/my_blogs/assets/js/23.7b6e57d6.js"><link rel="prefetch" href="/my_blogs/assets/js/24.20e19176.js"><link rel="prefetch" href="/my_blogs/assets/js/4.71c91885.js"><link rel="prefetch" href="/my_blogs/assets/js/5.4d571bd1.js"><link rel="prefetch" href="/my_blogs/assets/js/6.92aa1760.js"><link rel="prefetch" href="/my_blogs/assets/js/7.72110cb1.js"><link rel="prefetch" href="/my_blogs/assets/js/8.19af3466.js"><link rel="prefetch" href="/my_blogs/assets/js/9.c18627f1.js">
+    <link rel="stylesheet" href="/my_blogs/assets/css/0.styles.29b1df99.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-19557b78><div data-v-19557b78><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-19557b78 data-v-19557b78><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-19557b78 data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>xya370</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2020
+        </a></span></div></div> <div class="hide" data-v-19557b78><header class="navbar" data-v-19557b78><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/my_blogs/" class="home-link router-link-active"><!----> <span class="site-name">blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/my_blogs/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my_blogs/categories/踩坑日常/" class="nav-link"><i class="iconfont undefined"></i>
+  踩坑日常
+</a></li><li class="dropdown-item"><!----> <a href="/my_blogs/categories/挖坑中/" class="nav-link"><i class="iconfont undefined"></i>
+  挖坑中
+</a></li></ul></div></div><div class="nav-item"><a href="/my_blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/my_blogs/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-19557b78></div> <aside class="sidebar" data-v-19557b78><div class="personal-info-wrapper" data-v-b038cec6><img src="avatar.png" alt="author-avatar" class="personal-img" data-v-b038cec6> <h3 class="name" data-v-b038cec6>
+    xya370
+  </h3> <div class="num" data-v-b038cec6><div data-v-b038cec6><h3 data-v-b038cec6>12</h3> <h6 data-v-b038cec6>Article</h6></div> <div data-v-b038cec6><h3 data-v-b038cec6>11</h3> <h6 data-v-b038cec6>Tag</h6></div></div> <hr data-v-b038cec6></div> <nav class="nav-links"><div class="nav-item"><a href="/my_blogs/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/my_blogs/categories/踩坑日常/" class="nav-link"><i class="iconfont undefined"></i>
+  踩坑日常
+</a></li><li class="dropdown-item"><!----> <a href="/my_blogs/categories/挖坑中/" class="nav-link"><i class="iconfont undefined"></i>
+  挖坑中
+</a></li></ul></div></div><div class="nav-item"><a href="/my_blogs/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/my_blogs/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>利用scss进行主题切换</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/my_blogs/views/_posts/scss%E5%A4%9A%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2.html#theme-主题切换" class="sidebar-link">theme 主题切换</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/my_blogs/views/_posts/scss%E5%A4%9A%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2.html#config配置调整" class="sidebar-link">config配置调整</a></li><li class="sidebar-sub-header"><a href="/my_blogs/views/_posts/scss%E5%A4%9A%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2.html#配置theme-scss" class="sidebar-link">配置theme.scss</a></li><li class="sidebar-sub-header"><a href="/my_blogs/views/_posts/scss%E5%A4%9A%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2.html#halder-themes-scss-进行后期处理" class="sidebar-link">halder_themes.scss 进行后期处理</a></li><li class="sidebar-sub-header"><a href="/my_blogs/views/_posts/scss%E5%A4%9A%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2.html#使用" class="sidebar-link">使用</a></li></ul></li><li><a href="/my_blogs/views/_posts/scss%E5%A4%9A%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2.html#关于自定义主题" class="sidebar-link">关于自定义主题</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>利用scss进行主题切换</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>xya370</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2020
+        </a></span></div></div> <div data-v-19557b78><main class="page"><div class="page-title" style="display:none;"><h1>利用scss进行主题切换</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>xya370</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2020-05-21</span></i> <!----> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      css
+    </span><span class="tag-item" data-v-484a899e>
+      scss
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><div class="custom-block tip"><p>基本思想：在html上添加data-theme属性通过对应的属性值切换不同的配置，使用data-theme时</p></div> <p>关于主题切换的这些事，网上已经有很多文章记录了，基本想法都是差不多的，在此，仅记录我自己使用的方法。设置的主题有三种:1.默认即白天主题 2.暗色主题 3.自定义主题，即自己选择颜色，我们在这先实现主题的切换。</p> <h2 id="theme-主题切换"><a href="#theme-主题切换" class="header-anchor">#</a> theme 主题切换</h2> <h3 id="config配置调整"><a href="#config配置调整" class="header-anchor">#</a> config配置调整</h3> <p>使用theme.scss文件，需要调整config配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>修改后的配置
+{
+  test: sassRegex,
+  exclude: sassModuleRegex,
+  use: getStyleLoaders(
+    {
+      importLoaders: 3,
+      sourceMap: isEnvProduction &amp;&amp; shouldUseSourceMap,
+    },
+    'sass-loader'
+  ).concat(
+    {
+      loader: &quot;sass-resources-loader&quot;,
+      options: {
+        resources: [
+            // 相关的主题文件
+          path.resolve(__dirname, '../src/theme.scss'),
+          path.resolve(__dirname, '../src/handler_theme.scss')
+        ]
+      }
+    }
+  ),
+  // Don't consider CSS imports dead code even if the
+  // containing package claims to have no side effects.
+  // Remove this when webpack adds a warning or an error for this.
+  // See https://github.com/webpack/webpack/issues/6571
+  sideEffects: true,
+},
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h3 id="配置theme-scss"><a href="#配置theme-scss" class="header-anchor">#</a> 配置theme.scss</h3> <p>默认项目已支持scss编译。在文件目录下新建一个theme.scss文件，保存theme配置</p> <div class="language-scss line-numbers-mode"><pre class="language-scss"><code>    <span class="token property"><span class="token variable">$normal</span></span><span class="token punctuation">:</span><span class="token punctuation">(</span>
+        <span class="token comment">// 属性名</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+            <span class="token comment">// 相关类名： 属性值</span>
+            <span class="token property">common</span><span class="token punctuation">:</span> #454545<span class="token punctuation">,</span>
+            <span class="token property">active</span><span class="token punctuation">:</span> #FDD303<span class="token punctuation">,</span>
+          <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+            <span class="token property">common</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+        <span class="token punctuation">)</span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property"><span class="token variable">$dark</span></span><span class="token punctuation">:</span><span class="token punctuation">(</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+            <span class="token property">common</span><span class="token punctuation">:</span> #fff<span class="token punctuation">,</span>
+            <span class="token property">active</span><span class="token punctuation">:</span> #007aff
+        <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+            <span class="token property">common</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property"><span class="token variable">$themes</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+        <span class="token string">&quot;default&quot;</span><span class="token punctuation">:</span> <span class="token variable">$normal</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;dark&quot;</span><span class="token punctuation">:</span> <span class="token variable">$dark</span>
+    <span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>以上，基本设定好了其中两个主题，然后需要利用scss的mixin来使用。</p> <h3 id="halder-themes-scss-进行后期处理"><a href="#halder-themes-scss-进行后期处理" class="header-anchor">#</a> halder_themes.scss 进行后期处理</h3> <p>利用@mixin 来对themes配置进行处理，使其输出对应的内容，theme.scss同目录下新增halder_themes.scss</p> <div class="language-scss line-numbers-mode"><pre class="language-scss"><code>    <span class="token keyword">@import</span> <span class="token string">'./theme.scss'</span><span class="token punctuation">;</span> <span class="token comment">//引入主题配置文件</span>
+    <span class="token comment">//遍历主题map</span>
+    <span class="token keyword">@mixin</span> <span class="token selector">themeify1 </span><span class="token punctuation">{</span>
+      <span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$theme-name</span>, <span class="token variable">$theme-map</span> in <span class="token variable">$themes</span> </span><span class="token punctuation">{</span>
+        <span class="token comment">//!global 把局部变量强升为全局变量</span>
+        <span class="token property"><span class="token variable">$theme-map</span></span><span class="token punctuation">:</span> <span class="token variable">$theme-map</span> !global<span class="token punctuation">;</span>
+        <span class="token comment">//判断html的data-theme的属性值  #{}是sass的插值表达式</span>
+        <span class="token comment">//&amp; sass嵌套里的父容器标识   @content是混合器插槽，像vue的slot</span>
+        <span class="token selector">[data-theme=&quot;<span class="token variable">#{$theme-name}</span>&quot;] <span class="token parent important">&amp;</span> </span><span class="token punctuation">{</span>
+          <span class="token keyword">@content</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">//获取对应主题对应属性下相关状态的属性值</span>
+    <span class="token keyword">@function</span> <span class="token function">isStyle</span><span class="token punctuation">(</span><span class="token variable">$style</span><span class="token punctuation">,</span> <span class="token variable">$type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">//map-get 根据对应的key值返回map中对应的值</span>
+        <span class="token comment">//map-get($map, $key)</span>
+      <span class="token keyword">@return</span> <span class="token function">map-get</span><span class="token punctuation">(</span><span class="token function">map-get</span><span class="token punctuation">(</span><span class="token variable">$theme-map</span><span class="token punctuation">,</span> <span class="token variable">$style</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token variable">$type</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">@mixin</span> styles <span class="token punctuation">(</span><span class="token variable">$style</span><span class="token punctuation">,</span><span class="token variable">$type</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">@include</span> <span class="token selector">themeify1 </span><span class="token punctuation">{</span>
+        <span class="token property"><span class="token variable">#{$style}</span></span><span class="token punctuation">:</span><span class="token function">isStyle</span><span class="token punctuation">(</span><span class="token variable">$style</span><span class="token punctuation">,</span> <span class="token variable">$type</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h3 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h3> <p>在scss文件中使用</p> <div class="language-scss line-numbers-mode"><pre class="language-scss"><code>    <span class="token selector">.font </span><span class="token punctuation">{</span>
+       <span class="token keyword">@include</span> <span class="token function">styles</span><span class="token punctuation">(</span><span class="token string">&quot;color&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;active&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这时候可以看到，编译之后的css是这样的</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code>    <span class="token selector">[data-theme=&quot;default&quot;] .font</span> <span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> #FDD303<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>对于不同的主题切换，我们只需要使用最简单的方法改变html中data-theme的属性值就可以切换啦</p> <h2 id="关于自定义主题"><a href="#关于自定义主题" class="header-anchor">#</a> 关于自定义主题</h2> <p>一般来说，许多自定义主题是提供几种不同色值，来进行主题设置，通常这种情况下是配置了不同色值的主题文件，但是，这不是我所设想的自定义主题，自定义主题，当然是可以随机选中一种颜色来进行配置都是可以的，甚至可以从图片中选取主题色来进行配置，关于如何设置色值的问题，在网上查了好久，最终发现css的var方法可以使用。
+在theme.scss中新增部分内容</p> <div class="language-scss line-numbers-mode"><pre class="language-scss"><code>    <span class="token selector">:root </span><span class="token punctuation">{</span> <span class="token comment">// root选择器，匹配文档根元素，一般html文档中是html元素</span>
+      <span class="token property">--defineColor</span><span class="token punctuation">:</span> #FDD303<span class="token punctuation">;</span> <span class="token comment">// 定义一个defineColor属性</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token property"><span class="token variable">$define</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+            <span class="token property">common</span><span class="token punctuation">:</span> #454545<span class="token punctuation">,</span>
+            <span class="token property">active</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--defineColor<span class="token punctuation">)</span> <span class="token comment">//var()用于插入自定义的属性值</span>
+        <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+            <span class="token property">common</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">)</span>
+    <span class="token property"><span class="token variable">$themes</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+        <span class="token string">&quot;define&quot;</span><span class="token punctuation">:</span> <span class="token variable">$define</span>
+    <span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>对于使用方法无须修改，可以在文件中通过以下语句进行颜色修改</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>    document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">':root'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'style'</span><span class="token punctuation">,</span> <span class="token string">'--defineColor: '</span><span class="token operator">+</span>color<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这样一个关于scss下的主题修改就好了，不过感觉还有挺多问题的，毕竟没有后端，无法保存主题，每次刷新都会回到初始状态，就先这样吧</p></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">6/1/2020, 10:01:08 AM</span></div></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div></div></div>
+    <script src="/my_blogs/assets/js/app.abffb475.js" defer></script><script src="/my_blogs/assets/js/3.512a1791.js" defer></script><script src="/my_blogs/assets/js/1.2587663a.js" defer></script><script src="/my_blogs/assets/js/16.82fa4a51.js" defer></script>
+  </body>
+</html>
